@@ -12,6 +12,7 @@
 		E1222A2E241080AD006C0EFE /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1222A1D24107F8C006C0EFE /* SwiftyJSON.framework */; };
 		E1222A2F241080AD006C0EFE /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E1222A1D24107F8C006C0EFE /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E1222A3D24116C23006C0EFE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1222A3C24116C23006C0EFE /* SceneDelegate.swift */; };
+		E18AC8AF24118989008893D5 /* LaunchesPastPresenterSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18AC8AE24118989008893D5 /* LaunchesPastPresenterSpec.swift */; };
 		E194DFEF2411729C00E31067 /* LaunchesPastService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E194DFEE2411729C00E31067 /* LaunchesPastService.swift */; };
 		E194DFF1241172B400E31067 /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = E194DFF0241172B400E31067 /* Globals.swift */; };
 		E194DFF3241172D100E31067 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E194DFF2241172D100E31067 /* NetworkManager.swift */; };
@@ -68,6 +69,7 @@
 		E1222A1724107F6F006C0EFE /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = SOURCE_ROOT; };
 		E1222A1D24107F8C006C0EFE /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = SOURCE_ROOT; };
 		E1222A3C24116C23006C0EFE /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E18AC8AE24118989008893D5 /* LaunchesPastPresenterSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesPastPresenterSpec.swift; sourceTree = "<group>"; };
 		E194DFEE2411729C00E31067 /* LaunchesPastService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesPastService.swift; sourceTree = "<group>"; };
 		E194DFF0241172B400E31067 /* Globals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Globals.swift; sourceTree = "<group>"; };
 		E194DFF2241172D100E31067 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
@@ -163,6 +165,7 @@
 			children = (
 				E19FB3A924105613008487BF /* EVgoTests.swift */,
 				E19FB3AB24105613008487BF /* Info.plist */,
+				E18AC8AE24118989008893D5 /* LaunchesPastPresenterSpec.swift */,
 			);
 			path = EVgoTests;
 			sourceTree = "<group>";
@@ -288,6 +291,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E18AC8AF24118989008893D5 /* LaunchesPastPresenterSpec.swift in Sources */,
 				E19FB3AA24105613008487BF /* EVgoTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
