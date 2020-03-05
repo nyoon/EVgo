@@ -1,7 +1,5 @@
 # build with this command
 # carthage update --platform iOS --no-use-binaries
-# github "ReactiveX/RxSwift" ~> 5.1.0
-# github "Quick/Nimble" ~> 8.0.2
-# github "Quick/Quick" ~> 2.1.0
-# github "SwiftyJSON/SwiftyJSON" ~> 5.0.0
-# github "apollographql/apollo-ios"
+github "Quick/Nimble" ~> 8.0.2
+github "Quick/Quick" ~> 2.1.0
+github "SwiftyJSON/SwiftyJSON" ~> 5.0.0

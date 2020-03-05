@@ -12,5 +12,9 @@ import Nimble
 @testable import EVgo
 
 class LaunchesPastPresenterSpec: QuickSpec {
-    
+    override func spec() {
+        describe("a launches past presenter") {
+            
+        }
+    }
 }
