@@ -7,11 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E1222A272410808C006C0EFE /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = E1222A1724107F6F006C0EFE /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E1222A282410808C006C0EFE /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = E1222A1524107F65006C0EFE /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E1222A2E241080AD006C0EFE /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1222A1D24107F8C006C0EFE /* SwiftyJSON.framework */; };
+		E1222A2F241080AD006C0EFE /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E1222A1D24107F8C006C0EFE /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E1222A3D24116C23006C0EFE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1222A3C24116C23006C0EFE /* SceneDelegate.swift */; };
+		E194DFEF2411729C00E31067 /* LaunchesPastService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E194DFEE2411729C00E31067 /* LaunchesPastService.swift */; };
+		E194DFF1241172B400E31067 /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = E194DFF0241172B400E31067 /* Globals.swift */; };
+		E194DFF3241172D100E31067 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E194DFF2241172D100E31067 /* NetworkManager.swift */; };
+		E194DFF52411738800E31067 /* ServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E194DFF42411738800E31067 /* ServiceProvider.swift */; };
+		E194DFF724117BD300E31067 /* PastLaunchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E194DFF624117BD300E31067 /* PastLaunchCell.swift */; };
+		E194DFF92411841700E31067 /* LaunchesPastPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E194DFF82411841700E31067 /* LaunchesPastPresenter.swift */; };
+		E194DFFB2411843200E31067 /* PastLaunch.swift in Sources */ = {isa = PBXBuildFile; fileRef = E194DFFA2411843200E31067 /* PastLaunch.swift */; };
+		E194DFFD2411885F00E31067 /* DateHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E194DFFC2411885F00E31067 /* DateHelpers.swift */; };
 		E19FB39024105611008487BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19FB38F24105611008487BF /* AppDelegate.swift */; };
-		E19FB39224105611008487BF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19FB39124105611008487BF /* SceneDelegate.swift */; };
 		E19FB39424105611008487BF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19FB39324105611008487BF /* ViewController.swift */; };
 		E19FB39724105611008487BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E19FB39524105611008487BF /* Main.storyboard */; };
-		E19FB39A24105611008487BF /* EVgo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E19FB39824105611008487BF /* EVgo.xcdatamodeld */; };
 		E19FB39C24105613008487BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E19FB39B24105613008487BF /* Assets.xcassets */; };
 		E19FB39F24105613008487BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E19FB39D24105613008487BF /* LaunchScreen.storyboard */; };
 		E19FB3AA24105613008487BF /* EVgoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19FB3A924105613008487BF /* EVgoTests.swift */; };
@@ -27,13 +38,48 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		E1222A262410807D006C0EFE /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+				E1222A272410808C006C0EFE /* Quick.framework in CopyFiles */,
+				E1222A282410808C006C0EFE /* Nimble.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1222A2B241080AB006C0EFE /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E1222A2F241080AD006C0EFE /* SwiftyJSON.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		E1222A1524107F65006C0EFE /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = SOURCE_ROOT; };
+		E1222A1724107F6F006C0EFE /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = SOURCE_ROOT; };
+		E1222A1D24107F8C006C0EFE /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = SOURCE_ROOT; };
+		E1222A3C24116C23006C0EFE /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E194DFEE2411729C00E31067 /* LaunchesPastService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesPastService.swift; sourceTree = "<group>"; };
+		E194DFF0241172B400E31067 /* Globals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Globals.swift; sourceTree = "<group>"; };
+		E194DFF2241172D100E31067 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		E194DFF42411738800E31067 /* ServiceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceProvider.swift; sourceTree = "<group>"; };
+		E194DFF624117BD300E31067 /* PastLaunchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastLaunchCell.swift; sourceTree = "<group>"; };
+		E194DFF82411841700E31067 /* LaunchesPastPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesPastPresenter.swift; sourceTree = "<group>"; };
+		E194DFFA2411843200E31067 /* PastLaunch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastLaunch.swift; sourceTree = "<group>"; };
+		E194DFFC2411885F00E31067 /* DateHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHelpers.swift; sourceTree = "<group>"; };
 		E19FB38C24105611008487BF /* EVgo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EVgo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E19FB38F24105611008487BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E19FB39124105611008487BF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		E19FB39324105611008487BF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E19FB39624105611008487BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		E19FB39924105611008487BF /* EVgo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EVgo.xcdatamodel; sourceTree = "<group>"; };
 		E19FB39B24105613008487BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E19FB39E24105613008487BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E19FB3A024105613008487BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1222A2E241080AD006C0EFE /* SwiftyJSON.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,12 +107,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E1222A1424107F41006C0EFE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E1222A1D24107F8C006C0EFE /* SwiftyJSON.framework */,
+				E1222A1724107F6F006C0EFE /* Quick.framework */,
+				E1222A1524107F65006C0EFE /* Nimble.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
 		E19FB38324105611008487BF = {
 			isa = PBXGroup;
 			children = (
 				E19FB38E24105611008487BF /* EVgo */,
 				E19FB3A824105613008487BF /* EVgoTests */,
 				E19FB38D24105611008487BF /* Products */,
+				E1222A1424107F41006C0EFE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -82,13 +140,20 @@
 			isa = PBXGroup;
 			children = (
 				E19FB38F24105611008487BF /* AppDelegate.swift */,
-				E19FB39124105611008487BF /* SceneDelegate.swift */,
 				E19FB39324105611008487BF /* ViewController.swift */,
+				E194DFF624117BD300E31067 /* PastLaunchCell.swift */,
+				E194DFF82411841700E31067 /* LaunchesPastPresenter.swift */,
+				E194DFFA2411843200E31067 /* PastLaunch.swift */,
+				E194DFF42411738800E31067 /* ServiceProvider.swift */,
+				E194DFEE2411729C00E31067 /* LaunchesPastService.swift */,
+				E194DFF2241172D100E31067 /* NetworkManager.swift */,
+				E194DFF0241172B400E31067 /* Globals.swift */,
+				E194DFFC2411885F00E31067 /* DateHelpers.swift */,
 				E19FB39524105611008487BF /* Main.storyboard */,
+				E1222A3C24116C23006C0EFE /* SceneDelegate.swift */,
 				E19FB39B24105613008487BF /* Assets.xcassets */,
 				E19FB39D24105613008487BF /* LaunchScreen.storyboard */,
 				E19FB3A024105613008487BF /* Info.plist */,
-				E19FB39824105611008487BF /* EVgo.xcdatamodeld */,
 			);
 			path = EVgo;
 			sourceTree = "<group>";
@@ -112,6 +177,7 @@
 				E19FB38824105611008487BF /* Sources */,
 				E19FB38924105611008487BF /* Frameworks */,
 				E19FB38A24105611008487BF /* Resources */,
+				E1222A2B241080AB006C0EFE /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +195,7 @@
 				E19FB3A124105613008487BF /* Sources */,
 				E19FB3A224105613008487BF /* Frameworks */,
 				E19FB3A324105613008487BF /* Resources */,
+				E1222A262410807D006C0EFE /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -203,10 +270,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E194DFFD2411885F00E31067 /* DateHelpers.swift in Sources */,
+				E194DFF3241172D100E31067 /* NetworkManager.swift in Sources */,
+				E194DFEF2411729C00E31067 /* LaunchesPastService.swift in Sources */,
+				E194DFFB2411843200E31067 /* PastLaunch.swift in Sources */,
+				E194DFF724117BD300E31067 /* PastLaunchCell.swift in Sources */,
+				E194DFF52411738800E31067 /* ServiceProvider.swift in Sources */,
 				E19FB39424105611008487BF /* ViewController.swift in Sources */,
+				E194DFF92411841700E31067 /* LaunchesPastPresenter.swift in Sources */,
 				E19FB39024105611008487BF /* AppDelegate.swift in Sources */,
-				E19FB39A24105611008487BF /* EVgo.xcdatamodeld in Sources */,
-				E19FB39224105611008487BF /* SceneDelegate.swift in Sources */,
+				E194DFF1241172B400E31067 /* Globals.swift in Sources */,
+				E1222A3D24116C23006C0EFE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,6 +442,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5K785Q5R9U;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				INFOPLIST_FILE = EVgo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -386,6 +465,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5K785Q5R9U;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				INFOPLIST_FILE = EVgo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -473,19 +557,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		E19FB39824105611008487BF /* EVgo.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				E19FB39924105611008487BF /* EVgo.xcdatamodel */,
-			);
-			currentVersion = E19FB39924105611008487BF /* EVgo.xcdatamodel */;
-			path = EVgo.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = E19FB38424105611008487BF /* Project object */;
 }
